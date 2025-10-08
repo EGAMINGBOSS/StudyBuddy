@@ -1,0 +1,9 @@
+Field	Type	Null	Key	Default	Extra
+id	int(11)	NO	PRI	NULL	auto_increment
+user_id	int(11)	NO	MUL	NULL	
+email	varchar(100)	NO		NULL	
+code	varchar(10)	NO	MUL	NULL	
+verified	tinyint(1)	YES		0	
+expires_at	datetime	NO	MUL	NULL	
+created_at	datetime	YES		current_timestamp()	
+verified_at	datetime	YES		NULL	

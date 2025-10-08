@@ -1,0 +1,13 @@
+total 60
+drwxr-xr-x 7 root root  4096 Oct  7 09:16 .
+drwxr-xr-x 6 root root  4096 Oct  7 09:22 ..
+-rw-r--r-- 1 root root  8308 Oct  7 09:00 DEPLOYMENT_GUIDE.md
+-rw-r--r-- 1 root root 10476 Oct  7 09:16 EMAIL_VERIFICATION_GUIDE.md
+-rw-r--r-- 1 root root  4188 Oct  7 09:03 QUICK_START.md
+-rw-r--r-- 1 root root  7686 Oct  7 08:46 README.md
+drwxr-xr-x 3 root root  4096 Oct  7 09:11 backend
+drwxr-xr-x 2 root root    26 Oct  7 08:32 config
+drwxr-xr-x 2 root root    32 Oct  7 08:31 database
+drwxr-xr-x 3 root root  4096 Oct  7 09:14 frontend
+drwxr-xr-x 2 root root    96 Oct  7 08:45 mobile
+-rw-r--r-- 1 root root  3674 Oct  7 08:45 setup.sh

@@ -1,0 +1,1 @@
+-rw-r--r-- 1 root root 3674 Oct  7 08:45 /workspace/StudentPlatform/setup.sh

@@ -1,0 +1,17 @@
+total 112
+drwxr-xr-x 1 www-data www-data  4096 Oct  7 08:50 .
+drwxr-xr-x 1 root     root        26 Sep  9 00:47 ..
+drwxr-xr-x 2 www-data www-data  4096 Oct  7 08:49 api
+-rwxr-xr-x 1 www-data www-data 26837 Oct  7 08:49 app.js
+drwxr-xr-x 3 www-data www-data  4096 Oct  7 08:50 backend
+drwxr-xr-x 2 www-data www-data    34 Oct  7 08:50 config
+-rwxr-xr-x 1 www-data www-data 22897 Oct  7 08:49 dashboard.html
+drwxr-xr-x 2 www-data www-data    32 Oct  7 08:50 database
+-rwxr-xr-x 1 www-data www-data  2915 Oct  7 08:49 index.html
+-rwxr-xr-x 1 www-data www-data   615 Sep  9 00:47 index.nginx-debian.html
+-rwxr-xr-x 1 www-data www-data  3214 Oct  7 08:49 login.html
+-rwxr-xr-x 1 www-data www-data  1832 Oct  7 08:49 manifest.json
+-rwxr-xr-x 1 www-data www-data  3846 Oct  7 08:49 password_reset.html
+-rwxr-xr-x 1 www-data www-data  4621 Oct  7 08:49 register.html
+-rwxr-xr-x 1 www-data www-data  1117 Oct  7 08:49 service-worker.js
+-rwxr-xr-x 1 www-data www-data 13899 Oct  7 08:49 styles.css

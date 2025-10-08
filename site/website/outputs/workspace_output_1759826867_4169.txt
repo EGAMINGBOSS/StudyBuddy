@@ -1,0 +1,10 @@
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 https://cli.github.com/packages stable InRelease [3917 B]
+Get:5 https://deb.nodesource.com/node_20.x nodistro InRelease [12.1 kB]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [281 kB]
+Get:7 https://cli.github.com/packages stable/main amd64 Packages [347 B]
+Get:8 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [12.8 kB]
+Fetched 413 kB in 1s (819 kB/s)
+Reading package lists...

@@ -1,0 +1,14 @@
+Fixing /var/www/html/api/check_auth.php
+Fixing /var/www/html/api/daily_verse.php
+Fixing /var/www/html/api/get_documents.php
+Fixing /var/www/html/api/get_favorite_verses.php
+Fixing /var/www/html/api/get_messages.php
+Fixing /var/www/html/api/login.php
+Fixing /var/www/html/api/logout.php
+Fixing /var/www/html/api/register.php
+Fixing /var/www/html/api/resend_verification.php
+Fixing /var/www/html/api/reset_password.php
+Fixing /var/www/html/api/save_document.php
+Fixing /var/www/html/api/toggle_favorite.php
+Fixing /var/www/html/api/verify_email.php
+All API files have been updated with correct paths.

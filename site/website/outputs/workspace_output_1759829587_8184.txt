@@ -1,0 +1,21 @@
+<?php
+require_once '../backend/auth.php';
+
+header('Content-Type: application/json');
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $data = json_decode(file_get_contents('php://input'), true);
+    
+    $auth = new Auth();
+    $result = $auth->register(
+        $data['username'],
+        $data['email'],
+        $data['password'],
+        $data['full_name'] ?? ''
+    );
+    
+    echo json_encode($result);
+} else {
+    echo json_encode(['success' => false, 'message' => 'Invalid request method']);
+}
+?>

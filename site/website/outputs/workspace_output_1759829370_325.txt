@@ -1,0 +1,16 @@
+total 60
+drwxr-xr-x 2 www-data www-data 4096 Oct  7 09:15 .
+drwxr-xr-x 1 www-data www-data 4096 Oct  7 09:15 ..
+-rwxr-xr-x 1 www-data www-data  350 Oct  7 08:49 check_auth.php
+-rwxr-xr-x 1 www-data www-data  421 Oct  7 08:49 daily_verse.php
+-rwxr-xr-x 1 www-data www-data  419 Oct  7 08:49 get_documents.php
+-rwxr-xr-x 1 www-data www-data  425 Oct  7 08:49 get_favorite_verses.php
+-rwxr-xr-x 1 www-data www-data  505 Oct  7 08:49 get_messages.php
+-rwxr-xr-x 1 www-data www-data  426 Oct  7 08:49 login.php
+-rwxr-xr-x 1 www-data www-data  166 Oct  7 08:49 logout.php
+-rwxr-xr-x 1 www-data www-data  509 Oct  7 08:49 register.php
+-rw-r--r-- 1 root     root      772 Oct  7 09:15 resend_verification.php
+-rwxr-xr-x 1 www-data www-data  435 Oct  7 08:49 reset_password.php
+-rwxr-xr-x 1 www-data www-data 1088 Oct  7 08:49 save_document.php
+-rwxr-xr-x 1 www-data www-data  670 Oct  7 08:49 toggle_favorite.php
+-rw-r--r-- 1 root     root      698 Oct  7 09:15 verify_email.php

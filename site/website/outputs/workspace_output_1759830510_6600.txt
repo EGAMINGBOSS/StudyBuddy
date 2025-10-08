@@ -1,0 +1,5 @@
+id	user_id	email	code	verified	expires_at	created_at	verified_at
+1	1	test@example.com	982821	0	2025-10-07 09:51:04	2025-10-07 09:36:04	NULL
+2	2	test123@example.com	183892	0	2025-10-07 09:54:23	2025-10-07 09:39:23	NULL
+3	3	khenjiehbo@gmail.com	471077	0	2025-10-07 09:56:39	2025-10-07 09:41:39	NULL
+4	4	khenjiebalmes2022@gmail.com	611521	0	2025-10-07 09:58:04	2025-10-07 09:43:04	NULL

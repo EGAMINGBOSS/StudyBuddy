@@ -1,0 +1,8 @@
+total 4
+drwxr-xr-x 7 root root  105 Oct  7 08:31 .
+drwxr-xr-x 5 root root 4096 Oct  7 08:31 ..
+drwxr-xr-x 2 root root    6 Oct  7 08:31 backend
+drwxr-xr-x 2 root root    6 Oct  7 08:31 config
+drwxr-xr-x 2 root root    6 Oct  7 08:31 database
+drwxr-xr-x 2 root root    6 Oct  7 08:31 frontend
+drwxr-xr-x 2 root root    6 Oct  7 08:31 mobile

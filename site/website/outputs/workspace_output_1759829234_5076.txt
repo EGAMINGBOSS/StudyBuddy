@@ -1,0 +1,11 @@
+Tables_in_student_platform
+bible_verses
+chat_messages
+chat_sessions
+document_shares
+documents
+email_verifications
+notifications
+user_daily_verses
+user_preferences
+users

@@ -1,0 +1,2 @@
+User	Host	authentication_string
+root	localhost	invalid

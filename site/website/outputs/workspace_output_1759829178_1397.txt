@@ -1,0 +1,12 @@
+total 128
+drwxr-xr-x   3 root root  4096 Oct  7 09:11 .
+drwxr-xr-x   7 root root  4096 Oct  7 09:16 ..
+-rw-r--r--   1 root root  6974 Oct  7 09:13 auth.php
+-rw-r--r--   1 root root  5786 Oct  7 08:34 bible_verse.php
+-rw-r--r--   1 root root  7684 Oct  7 08:33 chat.php
+-rw-r--r--   1 root root  6173 Oct  7 08:33 documents.php
+-rw-r--r--   1 root root  6824 Oct  7 09:11 email_verification.php
+drwxr-xr-x 120 root root  4096 Oct  7 08:47 node_modules
+-rw-r--r--   1 root root 56301 Oct  7 08:47 package-lock.json
+-rw-r--r--   1 root root   423 Oct  7 08:47 package.json
+-rw-r--r--   1 root root  8357 Oct  7 08:34 server.js

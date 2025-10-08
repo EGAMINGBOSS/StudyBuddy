@@ -1,0 +1,12 @@
+total 108
+drwxr-xr-x 3 root root  4096 Oct  7 09:14 .
+drwxr-xr-x 7 root root  4096 Oct  7 09:16 ..
+drwxr-xr-x 2 root root  4096 Oct  7 09:14 api
+-rw-r--r-- 1 root root 26837 Oct  7 08:38 app.js
+-rw-r--r-- 1 root root 22897 Oct  7 08:37 dashboard.html
+-rw-r--r-- 1 root root  2915 Oct  7 08:44 index.html
+-rw-r--r-- 1 root root  3735 Oct  7 09:15 login.html
+-rw-r--r-- 1 root root  3846 Oct  7 08:44 password_reset.html
+-rw-r--r-- 1 root root  5148 Oct  7 09:14 register.html
+-rw-r--r-- 1 root root 13899 Oct  7 08:35 styles.css
+-rw-r--r-- 1 root root  7885 Oct  7 09:14 verify_email.html

@@ -1,0 +1,66 @@
+==========================================
+DonyoDeFamila Student Platform Setup
+==========================================
+
+Updating system packages...
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Hit:4 https://cli.github.com/packages stable InRelease
+Hit:5 https://deb.nodesource.com/node_20.x nodistro InRelease
+Fetched 55.4 kB in 1s (103 kB/s)
+Reading package lists...
+Installing required packages...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package mysql-server is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Enabling Apache modules...
+Enabling module rewrite.
+To activate the new configuration, you need to run:
+  service apache2 restart
+Enabling module headers.
+To activate the new configuration, you need to run:
+  service apache2 restart
+Installing Node.js dependencies...
+Setting up MySQL database...
+Importing database schema...
+Updating database configuration...
+Copying frontend files...
+Setting permissions...
+Creating Apache virtual host...
+Enabling site donyodefamila.
+To activate the new configuration, you need to run:
+  service apache2 reload
+Site 000-default disabled.
+To activate the new configuration, you need to run:
+  service apache2 reload
+Restarting Apache...
+Starting WebSocket server...
+
+==========================================
+Setup Complete!
+==========================================
+
+Your DonyoDeFamila Student Platform is now ready!
+
+Access the platform at:
+  - http://localhost
+  - http://your-server-ip
+
+WebSocket server running on port 3000
+
+Default database credentials:
+  Username: student_user
+  Password: student_pass_2024
+  Database: student_platform
+
+To check WebSocket server status:
+  systemctl status donyodefamila-websocket
+
+To view logs:
+  tail -f /var/log/websocket-server.log
+

@@ -1,0 +1,182 @@
+<?php
+require_once __DIR__ . '/../config/database.php';
+
+class EmailVerification {
+    private $conn;
+    
+    public function __construct() {
+        $this->conn = getDBConnection();
+    }
+    
+    // Generate verification code
+    public function generateVerificationCode($length = 6) {
+        return str_pad(rand(0, pow(10, $length) - 1), $length, '0', STR_PAD_LEFT);
+    }
+    
+    // Send verification email
+    public function sendVerificationEmail($email, $username, $code) {
+        $subject = "DonyoDeFamila - Email Verification Code";
+        
+        $message = "
+        <html>
+        <head>
+            <style>
+                body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+                .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }
+                .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }
+                .code-box { background: white; border: 2px solid #4a90e2; padding: 20px; text-align: center; margin: 20px 0; border-radius: 8px; }
+                .code { font-size: 32px; font-weight: bold; color: #4a90e2; letter-spacing: 5px; }
+                .footer { text-align: center; margin-top: 20px; color: #7f8c8d; font-size: 12px; }
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <div class='header'>
+                    <h1>🎓 DonyoDeFamila</h1>
+                    <p>Student Platform</p>
+                </div>
+                <div class='content'>
+                    <h2>Welcome, {$username}!</h2>
+                    <p>Thank you for signing up for DonyoDeFamila Student Platform. To complete your registration, please verify your email address.</p>
+                    
+                    <div class='code-box'>
+                        <p>Your verification code is:</p>
+                        <div class='code'>{$code}</div>
+                    </div>
+                    
+                    <p>Enter this code on the verification page to activate your account.</p>
+                    <p><strong>This code will expire in 15 minutes.</strong></p>
+                    
+                    <p>If you didn't create an account with DonyoDeFamila, please ignore this email.</p>
+                </div>
+                <div class='footer'>
+                    <p>© 2025 DonyoDeFamila Student Platform. All rights reserved.</p>
+                    <p>This is an automated email. Please do not reply.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        ";
+        
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= "From: DonyoDeFamila <noreply@donyodefamila.com>" . "\r\n";
+        
+        // Send email
+        $result = mail($email, $subject, $message, $headers);
+        
+        return $result;
+    }
+    
+    // Store verification code
+    public function storeVerificationCode($user_id, $email, $code) {
+        $expires_at = date('Y-m-d H:i:s', strtotime('+15 minutes'));
+        
+        // Delete old codes for this user
+        $stmt = $this->conn->prepare("DELETE FROM email_verifications WHERE user_id = ?");
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        
+        // Insert new code
+        $stmt = $this->conn->prepare("
+            INSERT INTO email_verifications (user_id, email, code, expires_at) 
+            VALUES (?, ?, ?, ?)
+        ");
+        $stmt->bind_param("isss", $user_id, $email, $code, $expires_at);
+        
+        if ($stmt->execute()) {
+            return ['success' => true, 'message' => 'Verification code stored'];
+        }
+        
+        return ['success' => false, 'message' => 'Failed to store verification code'];
+    }
+    
+    // Verify code
+    public function verifyCode($user_id, $code) {
+        $stmt = $this->conn->prepare("
+            SELECT id, code, expires_at, verified 
+            FROM email_verifications 
+            WHERE user_id = ? AND code = ?
+            ORDER BY created_at DESC 
+            LIMIT 1
+        ");
+        $stmt->bind_param("is", $user_id, $code);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result->num_rows === 0) {
+            return ['success' => false, 'message' => 'Invalid verification code'];
+        }
+        
+        $verification = $result->fetch_assoc();
+        
+        // Check if already verified
+        if ($verification['verified']) {
+            return ['success' => false, 'message' => 'Email already verified'];
+        }
+        
+        // Check if expired
+        if (strtotime($verification['expires_at']) < time()) {
+            return ['success' => false, 'message' => 'Verification code has expired'];
+        }
+        
+        // Mark as verified
+        $stmt = $this->conn->prepare("
+            UPDATE email_verifications 
+            SET verified = TRUE, verified_at = NOW() 
+            WHERE id = ?
+        ");
+        $stmt->bind_param("i", $verification['id']);
+        $stmt->execute();
+        
+        // Update user as verified
+        $stmt = $this->conn->prepare("
+            UPDATE users 
+            SET email_verified = TRUE, email_verified_at = NOW() 
+            WHERE id = ?
+        ");
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        
+        return ['success' => true, 'message' => 'Email verified successfully'];
+    }
+    
+    // Resend verification code
+    public function resendVerificationCode($user_id, $email, $username) {
+        // Generate new code
+        $code = $this->generateVerificationCode();
+        
+        // Store code
+        $storeResult = $this->storeVerificationCode($user_id, $email, $code);
+        
+        if (!$storeResult['success']) {
+            return $storeResult;
+        }
+        
+        // Send email
+        $emailSent = $this->sendVerificationEmail($email, $username, $code);
+        
+        if ($emailSent) {
+            return ['success' => true, 'message' => 'Verification code sent to your email'];
+        }
+        
+        return ['success' => false, 'message' => 'Failed to send verification email'];
+    }
+    
+    // Check if user is verified
+    public function isEmailVerified($user_id) {
+        $stmt = $this->conn->prepare("SELECT email_verified FROM users WHERE id = ?");
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result->num_rows > 0) {
+            $user = $result->fetch_assoc();
+            return $user['email_verified'] == 1;
+        }
+        
+        return false;
+    }
+}
+?>

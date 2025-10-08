@@ -1,0 +1,19 @@
+/workspace
+total 120
+drwxr-xr-x 1 www-data www-data  4096 Oct  7 09:15 .
+drwxr-xr-x 1 root     root        26 Sep  9 00:47 ..
+drwxr-xr-x 2 www-data www-data  4096 Oct  7 09:15 api
+-rwxr-xr-x 1 www-data www-data 26885 Oct  7 08:58 app.js
+drwxr-xr-x 3 www-data www-data  4096 Oct  7 09:15 backend
+drwxr-xr-x 2 www-data www-data    34 Oct  7 08:50 config
+-rwxr-xr-x 1 www-data www-data 22897 Oct  7 08:49 dashboard.html
+drwxr-xr-x 2 www-data www-data    32 Oct  7 08:50 database
+-rwxr-xr-x 1 www-data www-data  2915 Oct  7 08:49 index.html
+-rwxr-xr-x 1 www-data www-data   615 Sep  9 00:47 index.nginx-debian.html
+-rwxr-xr-x 1 www-data www-data  3735 Oct  7 09:15 login.html
+-rwxr-xr-x 1 www-data www-data  1832 Oct  7 08:49 manifest.json
+-rwxr-xr-x 1 www-data www-data  3846 Oct  7 08:49 password_reset.html
+-rwxr-xr-x 1 www-data www-data  5148 Oct  7 09:15 register.html
+-rwxr-xr-x 1 www-data www-data  1117 Oct  7 08:49 service-worker.js
+-rwxr-xr-x 1 www-data www-data 13899 Oct  7 08:49 styles.css
+-rw-r--r-- 1 root     root      7885 Oct  7 09:15 verify_email.html

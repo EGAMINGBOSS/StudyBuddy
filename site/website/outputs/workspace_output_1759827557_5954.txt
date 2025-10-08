@@ -1,0 +1,7 @@
+root         223  0.0  0.0 1321972 70440 pts/0   Sl   08:30   0:02 /usr/local/lib/python3.11/site-packages/playwright/driver/node /usr/local/lib/python3.11/site-packages/playwright/driver/package/cli.js run-driver
+root        9369  0.0  0.0      0     0 pts/0    Z+   08:50   0:00 [node] <defunct>
+root        9617  0.0  0.0 1115560 62596 pts/0   Sl   08:57   0:00 /usr/lib/code-server/lib/node /usr/lib/code-server --trusted-origins=* --bind-addr 127.0.0.1:4000 --auth none --user-data-dir /opt/code-server --extensions-dir /opt/code-server/extensions
+root        9635  0.0  0.0 1050444 63140 pts/0   Sl   08:57   0:00 /usr/lib/code-server/lib/node /usr/lib/code-server/out/node/entry
+root        9701  0.0  0.0 995440 55628 pts/0    Sl+  08:58   0:00 node server.js
+root        9720  0.0  0.0      0     0 pts/0    Z+   08:59   0:00 [node] <defunct>
+root        9729  0.0  0.0   3752  1928 pts/0    S+   08:59   0:00 grep node

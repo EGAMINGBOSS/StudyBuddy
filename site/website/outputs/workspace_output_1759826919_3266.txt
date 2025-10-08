@@ -1,0 +1,2 @@
+Starting MariaDB database server: mariadbd.
+Starting Apache httpd web server: apache2.
