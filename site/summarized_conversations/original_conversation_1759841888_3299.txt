@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': 'Now let\'s start the PHP server on port 9000:\n\n<function_calls>\n<execute-command session_name="php_server" blocking="false">\ncd website/StudentPlatform && php -S 0.0.0.0:9000\n</execute-command>\n</function_calls>'}

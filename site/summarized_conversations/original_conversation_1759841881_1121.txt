@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Now let's install the MySQL extension for PHP:\n\n<function_calls>\n<execute-command>\nsudo apt-get install -y php-mysql\n</execute-command>\n</function_calls>"}

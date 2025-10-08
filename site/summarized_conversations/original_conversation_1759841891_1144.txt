@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Let's try installing MariaDB instead, which is a drop-in replacement for MySQL:\n\n<function_calls>\n<execute-command>\nsudo apt-get install -y mariadb-server\n</execute-command>\n</function_calls>"}

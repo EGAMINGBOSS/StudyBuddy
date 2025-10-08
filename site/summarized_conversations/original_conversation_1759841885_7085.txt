@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Let's try a different approach by using the expose-port tool:\n\n<function_calls>\n<expose-port>\n3000\n</expose-port>\n</function_calls>"}

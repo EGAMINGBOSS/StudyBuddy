@@ -1,0 +1,1 @@
+{'role': 'user', 'content': '<tool_result> <execute-command> ToolResult(success=True, output=\'{\\n  "output": "   id\\\\tuser_id\\\\temail\\\\tcode\\\\tcreated_at\\\\texpires_at\\\\n   2\\\\t1\\\\tkhenjiehbo@gmail.com\\\\t857192\\\\t2025-10-07 12:39:36\\\\t2025-10-08 12:39:36\\\\n",\\n  "exit_code": 0,\\n  "cwd": "/workspace"\\n}\') </execute-command> </tool_result>'}

@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Let's try port 9000 which should be available:\n\n<function_calls>\n<expose-port>\n9000\n</expose-port>\n</function_calls>"}

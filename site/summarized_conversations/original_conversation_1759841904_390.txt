@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': 'Now let\'s test if the verification is working by checking the database to see if codes are being stored:\n\n<function_calls>\n<execute-command>\nsudo mysql student_platform -e "SELECT * FROM verification_codes;"\n</execute-command>\n</function_calls>'}

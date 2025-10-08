@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Let's check which ports are available:\n\n<function_calls>\n<execute-command>\nnetstat -tuln\n</execute-command>\n</function_calls>"}

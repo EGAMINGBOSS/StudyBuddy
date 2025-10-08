@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Now let's start the MariaDB service:\n\n<function_calls>\n<execute-command>\nsudo service mariadb start\n</execute-command>\n</function_calls>"}

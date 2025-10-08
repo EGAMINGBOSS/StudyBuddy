@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': 'It seems port 8080 is already in use. Let\'s try a different port:\n\n<function_calls>\n<execute-command session_name="php_server" blocking="false">\ncd website/StudentPlatform && php -S 0.0.0.0:8000\n</execute-command>\n</function_calls>'}
