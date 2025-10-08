@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "I see the issue. The backend code is missing some critical files like database.php and email_verification.php. Let's also check if there are any frontend files in the uploaded zip:\n\n<function_calls>\n<execute-command>\nls -la website/authentication-system-mysql-php-LOGIN-SYSTEM-IN-PHP-AND-MYSQL-main\n</execute-command>\n</function_calls>"}

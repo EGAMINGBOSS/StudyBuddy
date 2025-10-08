@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': 'Let\'s check if there\'s a config file:\n\n<function_calls>\n<execute-command>\nfind website -name "config.php"\n</execute-command>\n</function_calls>'}

@@ -1,0 +1,1 @@
+{'role': 'assistant', 'content': "Now let's look at the login and register PHP files to understand how they work:\n\n<function_calls>\n<execute-command>\ncat website/authentication-system-mysql-php-LOGIN-SYSTEM-IN-PHP-AND-MYSQL-main/login.php\n</execute-command>\n</function_calls>"}
