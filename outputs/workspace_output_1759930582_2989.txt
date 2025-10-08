@@ -1,0 +1,9 @@
+  adding: StudentPlatform/ (stored 0%)
+  adding: StudentPlatform/css/ (stored 0%)
+  adding: StudentPlatform/css/style.css (deflated 64%)
+  adding: StudentPlatform/js/ (stored 0%)
+  adding: StudentPlatform/js/script.js (deflated 80%)
+  adding: StudentPlatform/index.html (deflated 82%)
+  adding: StudentPlatform/README.md (deflated 57%)
+  adding: StudentPlatform/SETUP_GUIDE.md (deflated 58%)
+-rw-r--r-- 1 root root 11K Oct  8 13:36 StudentPlatform_Dashboard.zip

@@ -1,0 +1,11 @@
+total 56
+drwxr-xr-x 5 root root   171 Oct  8 13:35 .
+drwxr-xr-x 5 root root  4096 Oct  7 12:16 ..
+-rw-r--r-- 1 root root  3323 Oct  7 12:25 README.md
+-rw-r--r-- 1 root root  5121 Oct  7 12:47 SETUP_GUIDE.md
+drwxr-xr-x 6 root root  4096 Oct  8 13:35 backup_auth
+drwxr-xr-x 2 root root    31 Oct  7 12:19 css
+-rw-r--r-- 1 root root 26082 Oct  8 13:33 index.html
+-rw-r--r-- 1 root root   334 Oct  7 13:01 index.php
+drwxr-xr-x 2 root root    31 Oct  7 12:19 js
+-rw-r--r-- 1 root root  1452 Oct  7 12:46 todo.md

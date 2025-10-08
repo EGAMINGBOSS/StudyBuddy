@@ -1,0 +1,10 @@
+total 8
+drwxr-xr-x 7 root root  138 Nov 22  2023 .
+drwxr-xr-x 3 root root   38 Oct  8 15:36 ..
+drwxr-xr-x 2 root root   33 Nov 22  2023 .github
+-rw-r--r-- 1 root root 1740 Nov 22  2023 README.md
+drwxr-xr-x 2 root root   35 Nov 22  2023 audio
+drwxr-xr-x 2 root root   32 Nov 22  2023 css
+drwxr-xr-x 2 root root   97 Nov 22  2023 img
+-rw-r--r-- 1 root root 2436 Nov 22  2023 index.html
+drwxr-xr-x 2 root root   53 Nov 22  2023 scripts
