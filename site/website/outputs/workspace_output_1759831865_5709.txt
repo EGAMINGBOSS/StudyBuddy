@@ -1,0 +1,1 @@
+-rwxr-xr-x 1 www-data www-data 6824 Oct  7 09:15 /var/www/html/backend/email_verification.php

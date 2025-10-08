@@ -1,0 +1,1 @@
+root       14248  0.0  0.0   3752  1552 pts/0    S+   09:51   0:00 grep sendmail

@@ -1,0 +1,1 @@
+{"success":true,"message":"Registration successful. Please check your email for verification code.","user_id":11,"requires_verification":true}

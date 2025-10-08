@@ -1,0 +1,2 @@
+id	user_id	email	code	verified	expires_at	created_at	verified_at
+7	7	debug456@example.com	530955	0	2025-10-07 10:21:53	2025-10-07 10:06:53	NULL

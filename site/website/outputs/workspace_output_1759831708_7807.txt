@@ -1,0 +1,25 @@
+total 216
+drwxr-sr-x 7 smmta smmsp  4096 Oct  7 09:10 .
+drwxr-xr-x 1 root  root   4096 Oct  7 09:10 ..
+-rwxr-xr-- 1 root  smmsp 10046 Oct  7 09:09 Makefile
+-rw------- 1 root  root   4265 Oct  7 09:09 access
+-rw-r----- 1 smmta smmsp 12288 Oct  7 09:09 access.db
+-rw-r--r-- 1 root  root    281 Jun 16  2024 address.resolve
+lrwxrwxrwx 1 root  smmsp    10 Oct  7 09:09 aliases -> ../aliases
+-rw-r----- 1 smmta smmsp 12288 Oct  7 09:10 aliases.db
+-rw-r--r-- 1 root  root   3255 Oct  7 09:09 databases
+-rw-r--r-- 1 root  root   6016 Jun 16  2024 helpfile
+-rw-r--r-- 1 root  smmsp    47 Oct  7 09:09 local-host-names
+drwxr-sr-x 2 smmta smmsp    54 Oct  7 09:09 m4
+drwxr-xr-x 2 root  root     30 Oct  7 09:09 peers
+drwxr-xr-x 2 root  smmsp    10 Jun 16  2024 sasl
+-rw-r--r-- 1 root  smmsp 65745 Oct  7 09:09 sendmail.cf
+-rw-r--r-- 1 root  root  12237 Oct  7 09:09 sendmail.conf
+-rw-r--r-- 1 root  smmsp  4072 Oct  7 09:09 sendmail.mc
+-rw-r--r-- 1 root  root    148 Jun 16  2024 service.switch
+-rw-r--r-- 1 root  root    179 Jun 16  2024 service.switch-nodns
+drwxr-sr-x 2 smmta smmsp    52 Oct  7 09:09 smrsh
+-rw-r--r-- 1 root  smmsp 45427 Oct  7 09:09 submit.cf
+-rw-r--r-- 1 root  smmsp  2389 Oct  7 09:09 submit.mc
+drwxr-xr-x 2 smmta smmsp   178 Oct  7 09:09 tls
+-rw-r--r-- 1 root  smmsp     0 Oct  7 09:09 trusted-users

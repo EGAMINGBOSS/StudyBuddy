@@ -1,0 +1,7 @@
+id	username	email
+1	testuser	test@example.com
+2	testuser123	test123@example.com
+3	khenjie	khenjiehbo@gmail.com
+4	khenjieHBO	khenjiebalmes2022@gmail.com
+5	debuguser	debug@example.com
+6	debuguser123	debug123@example.com

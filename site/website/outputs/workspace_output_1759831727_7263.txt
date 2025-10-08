@@ -1,0 +1,5 @@
+/var/log/apt/term.log
+/var/log/apt/history.log
+/var/log/dpkg.log
+/var/log/apache2/access.log
+/var/log/alternatives.log

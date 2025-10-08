@@ -1,0 +1,10 @@
+[Tue Oct 07 10:15:43.583749 2025] [php:notice] [pid 14109:tid 14109] [client 127.0.0.1:35846] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail -t -i
+[Tue Oct 07 10:18:06.903119 2025] [php:notice] [pid 14110:tid 14110] [client 127.0.0.1:36598] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail -t -i
+[Tue Oct 07 10:20:00.317112 2025] [php:notice] [pid 14688:tid 14688] [client 127.0.0.1:59874] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail -t -i
+[Tue Oct 07 10:21:55.947773 2025] [php:notice] [pid 14715:tid 14715] [client 127.0.0.1:36886] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail -t -i
+[Tue Oct 07 10:26:58.241450 2025] [mpm_prefork:notice] [pid 14104:tid 14104] AH00169: caught SIGTERM, shutting down
+[Tue Oct 07 10:28:28.769370 2025] [mpm_prefork:notice] [pid 15967:tid 15967] AH00163: Apache/2.4.65 (Debian) configured -- resuming normal operations
+[Tue Oct 07 10:28:28.769405 2025] [core:notice] [pid 15967:tid 15967] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Oct 07 10:30:56.940502 2025] [php:notice] [pid 15970:tid 15970] [client 127.0.0.1:46044] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail
+[Tue Oct 07 10:32:48.712867 2025] [php:notice] [pid 15971:tid 15971] [client 127.0.0.1:58810] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail
+[Tue Oct 07 10:34:51.663364 2025] [php:notice] [pid 15973:tid 15973] [client 127.0.0.1:36144] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail

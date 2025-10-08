@@ -1,0 +1,2 @@
+/var/spool/mqueue is empty
+		Total requests: 0

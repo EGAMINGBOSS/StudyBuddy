@@ -1,0 +1,1 @@
+-rwxr-sr-x 1 root smmsp 894288 Jun 16  2024 /usr/libexec/sendmail/sendmail

@@ -1,0 +1,21 @@
+total 544
+drwxr-xr-x 1 root root              4096 Oct  7 09:35 .
+drwxr-xr-x 1 root root               105 Sep  9 00:47 ..
+lrwxrwxrwx 1 root root                39 Sep  9 00:46 README -> ../../usr/share/doc/systemd/README.logs
+-rw-r--r-- 1 root root             19833 Oct  7 09:09 alternatives.log
+drwxr-x--- 2 root adm                 88 Oct  7 08:48 apache2
+-rw-r--r-- 1 root root               478 Oct  7 08:30 app_browser.log
+-rw-r--r-- 1 root root              2829 Oct  7 09:14 app_server.log
+drwxr-xr-x 1 root root                76 Oct  7 09:09 apt
+-rw-rw---- 1 root utmp                 0 Sep  8 00:00 btmp
+-rw-r--r-- 1 root root            501522 Oct  7 09:10 dpkg.log
+-rw-r--r-- 1 root root                 0 Sep  8 00:00 faillog
+-rw-r--r-- 1 root root              4656 Sep  9 00:48 fontconfig.log
+drwxr-sr-x 2 root systemd-journal     10 Sep  9 00:46 journal
+-rw-rw-r-- 1 root utmp                 0 Sep  8 00:00 lastlog
+drwxr-xr-x 1 root adm                 53 Sep  9 00:47 nginx
+drwx------ 2 root root                10 Sep  9 00:46 private
+drwxr-xr-x 2 root root                10 Dec 27  2022 supervisor
+-rw-r--r-- 1 root root               440 Oct  7 09:35 websocket-server.log
+-rw-rw-r-- 1 root utmp                 0 Sep  8 00:00 wtmp
+-rw-rw-rw- 1 root root              4963 Oct  7 08:30 x11vnc.log

@@ -1,0 +1,10 @@
+[Tue Oct 07 10:28:28.769405 2025] [core:notice] [pid 15967:tid 15967] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Oct 07 10:30:56.940502 2025] [php:notice] [pid 15970:tid 15970] [client 127.0.0.1:46044] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail
+[Tue Oct 07 10:32:48.712867 2025] [php:notice] [pid 15971:tid 15971] [client 127.0.0.1:58810] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail
+[Tue Oct 07 10:34:51.663364 2025] [php:notice] [pid 15973:tid 15973] [client 127.0.0.1:36144] Message could not be sent. Mailer Error: Could not execute: /usr/sbin/sendmail
+[Tue Oct 07 10:37:07.286965 2025] [php:error] [pid 16009:tid 16009] [client 127.0.0.1:53142] script '/var/www/html/test_mail.php' not found or unable to stat
+[Tue Oct 07 10:41:00.648142 2025] [mpm_prefork:notice] [pid 15967:tid 15967] AH00169: caught SIGTERM, shutting down
+[Tue Oct 07 10:42:31.931565 2025] [mpm_prefork:notice] [pid 16504:tid 16504] AH00163: Apache/2.4.65 (Debian) configured -- resuming normal operations
+[Tue Oct 07 10:42:31.931602 2025] [core:notice] [pid 16504:tid 16504] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Oct 07 10:43:41.289913 2025] [php:notice] [pid 16507:tid 16507] [client 127.0.0.1:41710] Verification email sent successfully to: finaltestuser123@example.com
+[Tue Oct 07 10:45:35.011975 2025] [php:notice] [pid 16510:tid 16510] [client 127.0.0.1:49694] Verification email sent successfully to: xyz123abc456@example.com

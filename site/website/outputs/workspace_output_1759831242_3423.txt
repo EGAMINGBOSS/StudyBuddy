@@ -1,0 +1,19 @@
+Sending email to: test@example.com
+Subject: DonyoDeFamila - Email Verification Code
+Headers: MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: DonyoDeFamila <noreply@donyodefamila.com>
+Reply-To: noreply@donyodefamila.com
+X-Mailer: PHP/8.2.29
+
+Message: 
+<html>
+<head>
+    <title>DonyoDeFamila - Email Verification Code</title>
+</head>
+<body>
+    <div st...
+Email sent successfully!
+
+Trying with additional sendmail parameters...
+Failed to send email with additional parameters!

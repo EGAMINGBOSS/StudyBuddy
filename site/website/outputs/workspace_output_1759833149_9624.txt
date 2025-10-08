@@ -1,0 +1,2 @@
+id	username	email
+14	completelynewuser	completelynewuser@example.com

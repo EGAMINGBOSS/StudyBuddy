@@ -1,0 +1,6 @@
+MSP Queue status...
+/var/spool/mqueue-client is empty
+		Total requests: 0
+MTA Queue status...
+/var/spool/mqueue is empty
+		Total requests: 0
