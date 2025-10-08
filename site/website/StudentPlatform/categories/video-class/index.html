@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>✨ Student Video Call ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        display:flex;
+        height:100vh;
+        overflow:hidden;
+    }
+    .video-container {
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        background:white;
+        margin:20px;
+        border-radius:20px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.1);
+        overflow:hidden;
+    }
+    .main-video {
+        flex:1;
+        background:#1e1e1e;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-size:1.2rem;
+        position:relative;
+    }
+    video {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .controls {
+        display:flex;
+        justify-content:center;
+        padding:10px;
+        gap:10px;
+        background:#f0f0f0;
+    }
+    .controls button {
+        padding:10px 15px;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;
+        font-weight:600;
+        background:#667eea;
+        color:white;
+        transition:0.3s;
+    }
+    .controls button:hover {background:#5a6ad6;}
+    .participants-chat {
+        display:flex;
+        flex-direction:row;
+        height:250px;
+        border-top:1px solid #ddd;
+    }
+    .participants, .chat {
+        flex:1;
+        padding:10px;
+        overflow-y:auto;
+    }
+    .participants {background:#f9f9f9; border-right:1px solid #ddd;}
+    .participant {display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+    .avatar {width:40px;height:40px;border-radius:50%;background:#667eea;color:white;display:flex;align-items:center;justify-content:center;font-weight:600;}
+    .chat {display:flex;flex-direction:column;}
+    .messages {flex:1;overflow-y:auto;margin-bottom:10px;}
+    .message {padding:5px 10px;background:#f1f1f1;border-radius:10px;margin-bottom:5px;}
+    .message.you {background:#667eea;color:white;}
+    .chat input {padding:10px;border-radius:10px;border:1px solid #ccc;width:calc(100% - 50px);}
+    .chat button {width:40px;border:none;background:#667eea;color:white;border-radius:10px;margin-left:5px;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<div class="video-container">
+    <div class="main-video" id="mainVideo">
+        Waiting for camera...
+    </div>
+
+    <div class="controls">
+        <button id="btnMic">🎤 Mic</button>
+        <button id="btnCamera">📹 Camera</button>
+        <button id="btnLeave">🚪 Leave</button>
+    </div>
+
+    <div class="participants-chat">
+        <div class="participants" id="participants">
+            <h4>Participants</h4>
+        </div>
+        <div class="chat">
+            <div class="messages" id="messages"></div>
+            <div style="display:flex;">
+                <input type="text" id="chatInput" placeholder="Type a message...">
+                <button onclick="sendMessage()">➡️</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+<script>
+// 🔑 Replace with your Firebase config
+const firebaseConfig = {
+    apiKey: "AIzaSyBscfoiJNX6W_Y9nX9JwWHN-3_-3nxk8nI",
+    authDomain: "videocall-ae0c0.firebaseapp.com",
+    databaseURL: "https://videocall-ae0c0-default-rtdb.firebaseio.com/",
+    projectId: "videocall-ae0c0",
+    storageBucket: "videocall-ae0c0.firebasestorage.app",
+    messagingSenderId: "953337244447",
+    appId: "1:953337244447:web:afbc016397f1169e025e2a"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// ===== Video Setup =====
+navigator.mediaDevices.getUserMedia({video:true,audio:true})
+.then(stream => {
+    const video = document.createElement('video');
+    video.srcObject = stream;
+    video.autoplay = true;
+    document.getElementById('mainVideo').innerHTML='';
+    document.getElementById('mainVideo').appendChild(video);
+}).catch(()=>{
+    document.getElementById('mainVideo').innerText='Camera not allowed';
+});
+
+// ===== Chat =====
+const messagesRef = db.ref('chat');
+messagesRef.on('child_added', snapshot => {
+    const msg = snapshot.val();
+    addMessage(msg.text, msg.sender);
+});
+
+function sendMessage(){
+    const input = document.getElementById('chatInput');
+    const text = input.value.trim();
+    if(text){
+        messagesRef.push({sender:'You', text:text});
+        input.value='';
+    }
+}
+
+function addMessage(text, sender){
+    const div = document.createElement('div');
+    div.className='message '+(sender==='You'?'you':'');
+    div.innerText=sender+': '+text;
+    document.getElementById('messages').appendChild(div);
+    document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+}
+
+// ===== Participants =====
+const participantsRef = db.ref('participants');
+participantsRef.on('value', snapshot=>{
+    const participantsDiv = document.getElementById('participants');
+    participantsDiv.innerHTML='<h4>Participants</h4>';
+    snapshot.forEach(child=>{
+        const p = child.val();
+        const div = document.createElement('div');
+        div.className='participant';
+        div.innerHTML=`<div class='avatar'>${p.name[0]}</div>${p.name}`;
+        participantsDiv.appendChild(div);
+    });
+});
+
+// Add yourself (random student name for demo)
+const myName = 'Student'+Math.floor(Math.random()*100);
+participantsRef.push({name:myName});
+
+// ===== Buttons =====
+document.getElementById('btnLeave').onclick=()=>window.location.href='../../index.html';
+</script>
+
+</body>
+</html>
