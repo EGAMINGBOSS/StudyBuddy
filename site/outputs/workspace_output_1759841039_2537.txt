@@ -1,0 +1,31 @@
+            // Generate and send verification code
+            require_once __DIR__ . '/email_verification.php';
+            $emailVerification = new EmailVerification();
+            $code = $emailVerification->generateVerificationCode();
+            $emailVerification->storeVerificationCode($user_id, $email, $code);
+            $emailVerification->sendVerificationEmail($email, $username, $code);
+            
+            return [
+                'success' => true, 
+                'message' => 'Registration successful. Please check your email for verification code.',
+                'user_id' => $user_id,
+                'requires_verification' => true
+            ];
+        }
+        
+        return ['success' => false, 'message' => 'Registration failed'];
+    }
+    
+    // Login user
+    public function login($username, $password) {
+        if (empty($username) || empty($password)) {
+            return ['success' => false, 'message' => 'Username and password are required'];
+        }
+        
+        $stmt = $this->conn->prepare("SELECT id, username, email, password, full_name, profile_picture, email_verified FROM users WHERE username = ? OR email = ?");
+        $stmt->bind_param("ss", $username, $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        if ($result->num_rows === 1) {
+            $user = $result->fetch_assoc();

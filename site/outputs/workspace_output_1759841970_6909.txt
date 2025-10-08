@@ -1,0 +1,25 @@
+total 136
+drwxr-xr-x 8 root root  4096 Oct  7 12:47 .
+drwxr-xr-x 5 root root  4096 Oct  7 12:16 ..
+-rw-r--r-- 1 root root  3323 Oct  7 12:25 README.md
+-rw-r--r-- 1 root root  5121 Oct  7 12:47 SETUP_GUIDE.md
+drwxr-xr-x 2 root root    30 Oct  7 12:23 api
+drwxr-xr-x 3 root root  4096 Oct  7 12:18 backend
+drwxr-xr-x 2 root root    55 Oct  7 12:18 config
+drwxr-xr-x 2 root root    31 Oct  7 12:19 css
+-rw-r--r-- 1 root root  5027 Oct  7 12:21 demo-reset.php
+drwxr-xr-x 2 root root    10 Oct  7 12:18 includes
+-rw-r--r-- 1 root root 24105 Oct  7 12:35 index.html
+-rw-r--r-- 1 root root  1819 Oct  7 12:18 index.php
+drwxr-xr-x 2 root root    31 Oct  7 12:19 js
+-rw-r--r-- 1 root root  5323 Oct  7 12:46 login.php
+-rw-r--r-- 1 root root   526 Oct  7 12:20 logout.php
+-rw-r--r-- 1 root root 15779 Oct  7 12:22 profile.php
+-rw-r--r-- 1 root root  7724 Oct  7 12:44 register.php
+-rw-r--r-- 1 root root   886 Oct  7 12:43 resend-code.php
+-rw-r--r-- 1 root root  5215 Oct  7 12:21 reset-password.php
+-rw-r--r-- 1 root root  2681 Oct  7 12:23 setup.php
+-rw-r--r-- 1 root root  1452 Oct  7 12:46 todo.md
+-rw-r--r-- 1 root root  1699 Oct  7 12:44 verify-direct.php
+-rw-r--r-- 1 root root  5446 Oct  7 12:43 verify.php
+-rw-r--r-- 1 root root  4288 Oct  7 12:20 welcome.php

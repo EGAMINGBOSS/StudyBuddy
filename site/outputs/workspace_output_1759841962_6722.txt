@@ -1,0 +1,10 @@
+total 5764
+drwxr-xr-x 5 root root    4096 Oct  7 12:57 .
+drwxr-xr-x 1 root root     152 Oct  7 12:46 ..
+-rw-r--r-- 1 root root  130964 Oct  7 12:16 Capture.PNG
+-rw-r--r-- 1 root root   31210 Oct  7 12:42 code.PNG
+-rw-r--r-- 1 root root 3663105 Oct  7 12:16 e3f55e6c-07ad-40ea-8eb2-851e8bc8e744.zip
+drwxr-xr-x 2 root root    4096 Oct  7 12:59 outputs
+-rw-r--r-- 1 root root 2042214 Oct  7 12:25 student_platform_auth_system.zip
+drwxr-xr-x 2 root root   12288 Oct  7 12:59 summarized_conversations
+drwxr-xr-x 5 root root    4096 Oct  7 12:16 website

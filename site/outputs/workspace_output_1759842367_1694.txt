@@ -1,0 +1,15 @@
+Testing login for user: khenjie
+Email: khenjiehbo@gmail.com
+Array
+(
+    [success] => 
+    [message] => Invalid username or password
+)
+Login failed: Invalid username or password
+
+Trying with email...
+Array
+(
+    [success] => 
+    [message] => Invalid username or password
+)

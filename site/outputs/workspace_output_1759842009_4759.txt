@@ -1,0 +1,3 @@
+id	username	email	password	full_name	profile_picture	email_verified	is_online	last_seen	created_at
+1	khenjie	khenjiehbo@gmail.com	$2y$10$O86RtMO3DzioRO5./4EF0uB9ZrIeZrB8Dx/BsFmm5GtW/C7JHtaii		default.jpg	1	0	2025-10-07 12:38:23	2025-10-07 12:38:23
+2	khenjieHBO	khenjiebalmes2022@gmail.com	$2y$10$EwKIcA3mPVEwFufE/BY/ouoeBECYix3jkGdbiuSb.RYijwByFQ.Ri		default.jpg	1	1	2025-10-07 12:53:55	2025-10-07 12:48:49

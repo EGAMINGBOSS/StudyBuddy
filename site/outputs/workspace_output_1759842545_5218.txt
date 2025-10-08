@@ -1,0 +1,5 @@
+root        8723  0.0  0.0      0     0 pts/0    Z+   12:26   0:00 [php] <defunct>
+root        8781  0.0  0.0      0     0 pts/0    Z+   12:29   0:00 [php] <defunct>
+root       10460  0.0  0.0 198764 20584 pts/0    S+   13:03   0:00 php -S 0.0.0.0:8000
+root       10471  0.0  0.0 198768 20136 pts/0    S+   13:04   0:00 php -S localhost:8000
+root       10659  0.0  0.0   3752  1948 pts/0    S+   13:09   0:00 grep php

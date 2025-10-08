@@ -1,0 +1,26 @@
+Testing login for user: khenjie
+Email: khenjiehbo@gmail.com
+Array
+(
+    [success] => 1
+    [message] => Login successful
+    [user] => Array
+        (
+            [id] => 1
+            [username] => khenjie
+            [email] => khenjiehbo@gmail.com
+            [full_name] => 
+            [profile_picture] => default.jpg
+        )
+
+)
+Login successful!
+User data:
+Array
+(
+    [id] => 1
+    [username] => khenjie
+    [email] => khenjiehbo@gmail.com
+    [full_name] => 
+    [profile_picture] => default.jpg
+)

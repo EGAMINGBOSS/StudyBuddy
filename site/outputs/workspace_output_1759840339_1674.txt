@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Platform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="card-body">
+                                                <form id="loginForm" action="/login.php" method="post" class="auth-form">
+                            <div class="form-group">
+                                <label for="username">Username or Email</label>
+                                <input type="text" name="username" id="username" class="form-control " value="">
+                                <span id="username_err" class="help-block"></span>
+                            </div>    
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" class="form-control ">
+                                <span id="password_err" class="help-block"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary btn-block" value="Login">
+                            </div>
+                            <p class="text-center">Don't have an account? <a href="register.php">Sign up now</a>.</p>
+                            <p class="text-center"><a href="reset-password.php">Forgot your password?</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

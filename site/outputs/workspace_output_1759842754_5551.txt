@@ -1,0 +1,12 @@
+HTTP/1.1 302 Found
+Host: localhost:9000
+Date: Tue, 07 Oct 2025 13:12:34 GMT
+Connection: close
+X-Powered-By: PHP/8.2.29
+Set-Cookie: PHPSESSID=ik31fbk2b04h88lvbtik1ctjm0; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+location: login.php
+Content-type: text/html; charset=UTF-8
+

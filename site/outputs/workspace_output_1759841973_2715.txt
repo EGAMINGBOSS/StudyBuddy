@@ -1,0 +1,11 @@
+total 64
+drwxr-xr-x  3 root root 4096 Oct  7 12:18 .
+drwxr-xr-x  8 root root 4096 Oct  7 12:47 ..
+-rw-r--r--  1 root root 6974 Oct  7 09:13 auth.php
+-rw-r--r--  1 root root 5786 Oct  7 08:34 bible_verse.php
+-rw-r--r--  1 root root 7684 Oct  7 08:33 chat.php
+-rw-r--r--  1 root root 6173 Oct  7 08:33 documents.php
+-rw-r--r--  1 root root 2290 Oct  7 12:18 email_verification.php
+drwxr-xr-x 63 root root 4096 Oct  7 12:16 node_modules
+-rw-r--r--  1 root root  423 Oct  7 08:47 package.json
+-rw-r--r--  1 root root 8357 Oct  7 08:34 server.js

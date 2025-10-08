@@ -1,0 +1,21 @@
+        // Attempt to register the user
+        $result = $auth->register($username, $email, $password, $full_name);
+        
+        if($result['success']) {
+            // Store user info for verification
+            $_SESSION["verification_user_id"] = $result['user_id'];
+            $_SESSION["verification_email"] = $email;
+            $_SESSION["verification_username"] = $username;
+            
+            // Redirect to verification page
+            header("location: verify.php");
+        } else {
+            // Registration failed, display error message
+            $register_err = $result['message'];
+        }
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">

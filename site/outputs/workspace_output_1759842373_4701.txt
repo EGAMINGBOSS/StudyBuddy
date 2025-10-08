@@ -1,0 +1,2 @@
+id	username	email	password
+1	khenjie	khenjiehbo@gmail.com	$2y$10$O86RtMO3DzioRO5./4EF0uB9ZrIeZrB8Dx/BsFmm5GtW/C7JHtaii

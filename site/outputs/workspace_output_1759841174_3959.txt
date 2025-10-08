@@ -1,0 +1,1 @@
+<h2>Verification Information</h2><p>User ID: 1</p><p>Email: khenjiehbo@gmail.com</p><p>Verification Code: <strong>857192</strong></p><form method='post'><input type='text' name='verification_code' placeholder='Enter code' maxlength='6' required><button type='submit'>Verify</button></form>

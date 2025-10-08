@@ -1,0 +1,2 @@
+id	user_id	email	code	created_at	expires_at
+2	1	khenjiehbo@gmail.com	857192	2025-10-07 12:39:36	2025-10-08 12:39:36

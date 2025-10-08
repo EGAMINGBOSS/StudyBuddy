@@ -1,0 +1,4 @@
+website/StudentPlatform/backend/auth.php
+website/StudentPlatform/backend/chat.php
+website/StudentPlatform/backend/documents.php
+website/StudentPlatform/backend/bible_verse.php
