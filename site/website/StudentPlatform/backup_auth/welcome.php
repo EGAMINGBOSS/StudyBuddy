@@ -1,0 +1,98 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect to login page
+if(!isset($_SESSION["logged_in"]) || $_SESSION["logged_in"] !== true) {
+    header("location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Student Platform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Student Platform</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="welcome.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.php">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="jumbotron welcome-container">
+            <h1 class="display-4">Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</h1>
+            <p class="lead">You have successfully logged into the Student Platform.</p>
+            <hr class="my-4">
+            <p>What would you like to do today?</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-book fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Courses</h5>
+                        <p class="card-text">Browse available courses and learning materials.</p>
+                        <a href="#" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-comments fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Discussion</h5>
+                        <p class="card-text">Join discussions with other students and teachers.</p>
+                        <a href="#" class="btn btn-primary">Join Discussion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-calendar-alt fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Schedule</h5>
+                        <p class="card-text">View your class schedule and upcoming events.</p>
+                        <a href="#" class="btn btn-primary">View Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; <?php echo date("Y"); ?> Student Platform. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
